@@ -11,7 +11,7 @@ const Header = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center p-4 border-b-gray-700 border-b-2 fixed top-0 left-0 right-0 z-50 bg-gray-900">
+    <div className="flex justify-between items-center p-4 fixed top-0 left-0 right-0 z-50 bg-black backdrop-blur-sm border-b-1 border-stone-700 shadow-lg">
       <div className="flex items-center">
         <Link href="#about" className="text-xl font-bold">
           jaxr.dev
