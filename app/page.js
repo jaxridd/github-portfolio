@@ -9,9 +9,11 @@ export default function Home() {
     <div className="relative">
       <Header />
       <SmoothScrollContainer>
-        <About />
-        <Projects />
-        <Contact />
+        <div className="pt-20">
+          <About />
+          <Projects />
+          <Contact />
+        </div>
       </SmoothScrollContainer>
     </div>
   );
