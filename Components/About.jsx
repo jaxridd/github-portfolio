@@ -6,9 +6,18 @@ const About = () => {
   return (
     <Section sectionId="about">
       <div className="flex flex-col items-center h-screen space-y-6 mt-50">
-        <h1 className="text-6xl font-bold">Jax Riddell</h1>
-        <h1 className="text-6xl font-bold">Full-Stack Developer</h1>
-        <div className="flex space-x-4">
+        <div className="flex items-center space-x-4">
+          <img
+            src="/jax.jpg"
+            alt="Jax Riddell"
+            className="w-40 h-40 rounded-full"
+          />
+          <div className="flex flex-col items-start">
+            <h1 className="text-6xl font-bold mb-3">Jax Riddell</h1>
+            <h2 className="text-3xl max-w-100">Full-stack developer with a passion for building.</h2>
+          </div>
+        </div>
+        <div className="flex items-center space-x-4">
           <InteractiveHoverButton
             className="border-white bg-white text-black hover:bg-stone-700 hover:text-white"
             onClick={() => {
@@ -21,6 +30,7 @@ const About = () => {
             Contact Me
           </InteractiveHoverButton>
         </div>
+        <div className="flex items-center space-x-4"></div>
       </div>
     </Section>
   );

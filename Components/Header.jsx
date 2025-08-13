@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Header = () => {
@@ -22,18 +21,6 @@ const Header = () => {
               key={item.id}
               href={`#${item.id}`}
               className="hover:text-gray-300 transition-colors duration-300"
-              onClick={(e) => {
-                e.preventDefault();
-                const element = document.querySelector(
-                  `[data-section="${item.id}"]`
-                );
-                if (element) {
-                  element.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start",
-                  });
-                }
-              }}
             >
               {item.label}
             </Link>
