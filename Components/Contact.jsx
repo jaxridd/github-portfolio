@@ -1,11 +1,12 @@
 "use client";
-import Section from "./Section";
 
 const Contact = () => {
   return (
-    <Section sectionId="contact">
-      <div>Contact</div>
-    </Section>
+    <div className="min-h-screen flex items-center justify-center py-20">
+      <div className="w-full max-w-6xl mx-auto px-4">
+        <div>Contact</div>
+      </div>
+    </div>
   );
 };
 

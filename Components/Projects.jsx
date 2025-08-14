@@ -1,11 +1,12 @@
 "use client";
-import Section from "./Section";
 
 const Projects = () => {
   return (
-    <Section sectionId="projects">
-      <div>Projects</div>
-    </Section>
+    <div className="min-h-screen flex items-center justify-center py-20">
+      <div className="w-full max-w-6xl mx-auto px-4">
+        <div>Projects</div>
+      </div>
+    </div>
   );
 };
 
