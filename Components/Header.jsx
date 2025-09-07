@@ -16,15 +16,7 @@ const Header = () => {
           jaxr.dev
         </Link>
         <nav className="flex space-x-8 ml-8">
-          {navItems.map((item) => (
-            <Link
-              key={item.id}
-              href={`#${item.id}`}
-              className="hover:text-gray-300 transition-colors duration-300"
-            >
-              {item.label}
-            </Link>
-          ))}
+          
         </nav>
       </div>
       <div className="flex items-center space-x-6">
@@ -37,7 +29,7 @@ const Header = () => {
           <FaGithub className="text-2xl" />
         </Link>
         <Link
-          href="https://www.linkedin.com/in/jaxriddell/"
+          href="https://www.linkedin.com/in/jax-riddell/"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-gray-300 transition-colors duration-300"

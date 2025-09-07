@@ -5,6 +5,7 @@ import Projects from "@/Components/Projects";
 import Contact from "@/Components/Contact";
 import Technologies from "@/Components/Technologies";
 import ParticlesBackground from "@/Components/ParticlesBackground";
+import WorkExperience from "@/Components/WorkExperience";
 
 export default function Home() {
   return (
@@ -13,9 +14,8 @@ export default function Home() {
       <Header />
       <div className="pt-20">
         <About />
-
         <Technologies />
-
+        <WorkExperience />
         <Projects />
         <Contact />
       </div>

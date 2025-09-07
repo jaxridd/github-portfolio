@@ -20,17 +20,20 @@ const About = () => {
             </div>
           </div>
           <div className="flex items-center space-x-4">
-            <InteractiveHoverButton
-              className="border-white bg-white text-black hover:bg-stone-700 hover:text-white"
-              onClick={() => {
-                window.open("public/Jax_Riddell_Res.pdf");
-              }}
+            <a
+              href="/Jax_Riddell_Res.pdf"
+              download="Jax_Riddell_Resume.pdf"
+              className="inline-block"
             >
-              Download CV
-            </InteractiveHoverButton>
-            <InteractiveHoverButton className="border-white bg-white text-black hover:bg-stone-700 hover:text-white">
-              Contact Me
-            </InteractiveHoverButton>
+              <InteractiveHoverButton className="border-white bg-white text-black hover:bg-stone-700 hover:text-white">
+                Download CV
+              </InteractiveHoverButton>
+            </a>
+            <a href="mailto:riddelljax@protonmail.com" className="inline-block">
+              <InteractiveHoverButton className="border-white bg-white text-black hover:bg-stone-700 hover:text-white">
+                Contact Me
+              </InteractiveHoverButton>
+            </a>
           </div>
         </div>
       </div>
