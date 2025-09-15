@@ -5,8 +5,9 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 const Header = () => {
   const navItems = [
     { id: "about", label: "About" },
+    { id: "technologies", label: "Technologies" },
+    { id: "experience", label: "Experience" },
     { id: "projects", label: "Projects" },
-    { id: "contact", label: "Contact" },
   ];
 
   return (
@@ -16,7 +17,15 @@ const Header = () => {
           jaxr.dev
         </Link>
         <nav className="flex space-x-8 ml-8">
-          
+          {navItems.map((item) => (
+            <Link
+              key={item.id}
+              href={`#${item.id}`}
+              className="hover:text-gray-300 transition-colors duration-300"
+            >
+              {item.label}
+            </Link>
+          ))}
         </nav>
       </div>
       <div className="flex items-center space-x-6">
