@@ -3,10 +3,11 @@ import { InteractiveHoverButton } from "./magicui/interactive-hover-button";
 
 const About = () => {
   return (
-    <div className="flex items-center justify-center py-15">
+    <div className="flex items-center justify-center">
       <div className="w-full max-w-6xl mx-auto px-4">
         <div className="flex flex-col items-center text-center space-y-6">
-          <div className="flex items-center space-x-4">
+          {/* Desktop Layout */}
+          <div className="hidden md:flex items-center space-x-4">
             <img
               src="/jax.jpg"
               alt="Jax Riddell"
@@ -19,7 +20,24 @@ const About = () => {
               </h2>
             </div>
           </div>
-          <div className="flex items-center space-x-4">
+
+          {/* Mobile Layout */}
+          <div className="md:hidden flex flex-col items-center space-y-4">
+            <img
+              src="/jax.jpg"
+              alt="Jax Riddell"
+              className="w-24 h-24 rounded-full"
+            />
+            <div className="flex flex-col items-center">
+              <h1 className="text-4xl font-bold mb-3">Jax Riddell</h1>
+              <h2 className="text-xl text-center px-4">
+                Full-stack developer with a passion for building.
+              </h2>
+            </div>
+          </div>
+
+          {/* Action Buttons */}
+          <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
             <a
               href="/Jax_Riddell_Res.pdf"
               download="Jax_Riddell_Resume.pdf"
