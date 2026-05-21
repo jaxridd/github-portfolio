@@ -2,7 +2,8 @@ import React from "react";
 import { ArrowRight, Download, Mail } from "lucide-react";
 
 export const InteractiveHoverButton = React.forwardRef(
-  ({ children, className = "", ...props }, ref) => {
+  ({ children, className = "", href, ...props }, ref) => {
+    const Component = href ? "a" : "button";
     // Determine icon based on button content
     let IconComponent = ArrowRight; // default
     if (
@@ -26,9 +27,10 @@ export const InteractiveHoverButton = React.forwardRef(
     }
 
     return (
-      <button
+      <Component
         ref={ref}
-        className={`group relative w-auto cursor-pointer overflow-hidden rounded-full border p-2 px-6 text-center font-semibold transition-colors ${className}`}
+        href={href}
+        className={`group relative inline-block w-auto cursor-pointer overflow-hidden rounded-full border p-2 px-6 text-center font-semibold transition-colors no-underline ${className}`}
         {...props}
       >
         <div className="flex items-center gap-2">
@@ -43,7 +45,7 @@ export const InteractiveHoverButton = React.forwardRef(
           <span>{children}</span>
           <ArrowRight />
         </div>
-      </button>
+      </Component>
     );
   }
 );

@@ -2,17 +2,17 @@ import "./globals.css";
 import Script from "next/script";
 
 export const metadata = {
-  title: "Jax Riddell - Full-Stack Developer",
+  title: "Jax Riddell - IT & Systems Support",
   description:
-    "Portfolio of Jax Riddell, a full-stack developer specializing in React, Next.js, and modern web technologies. View my projects including ClaimLens AI fact-checking app and Disney+ clone.",
+    "Portfolio of Jax Riddell — IT support, systems administration, and homelab projects including Active Directory, pfSense, and Splunk SIEM. CompTIA Security+ certified.",
   keywords:
-    "Jax Riddell, full-stack developer, React, Next.js, JavaScript, portfolio, web development",
+    "Jax Riddell, IT support, systems administration, Active Directory, pfSense, networking, homelab, CompTIA Security+, Lamar University",
   authors: [{ name: "Jax Riddell" }],
   creator: "Jax Riddell",
   openGraph: {
-    title: "Jax Riddell - Full-Stack Developer",
+    title: "Jax Riddell - IT & Systems Support",
     description:
-      "Portfolio of Jax Riddell, a full-stack developer with a passion for building.",
+      "IT & systems support professional building enterprise-style homelabs in Active Directory, firewalls, and SIEM.",
     url: "https://jaxr.dev",
     siteName: "Jax Riddell Portfolio",
     images: [
@@ -28,9 +28,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jax Riddell - Full-Stack Developer",
+    title: "Jax Riddell - IT & Systems Support",
     description:
-      "Portfolio of Jax Riddell, a full-stack developer with a passion for building.",
+      "IT & systems support professional building enterprise-style homelabs in Active Directory, firewalls, and SIEM.",
     images: ["/jax.jpg"],
   },
 };

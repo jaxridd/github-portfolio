@@ -14,7 +14,7 @@ export default function Home() {
         <section id="about" className="py-8 md:py-15">
           <About />
         </section>
-        <section id="technologies" className="py-8 md:py-15">
+        <section id="skills" className="py-8 md:py-15">
           <Technologies />
         </section>
         <section id="experience" className="py-8 md:py-15">
