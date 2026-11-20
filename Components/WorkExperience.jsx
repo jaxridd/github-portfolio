@@ -1,22 +1,22 @@
 const experiences = [
   {
+    title: "Help Desk Support Representative",
+    organization: "Neches Federal Credit Union",
+    period: "June 2026 – Present",
+    highlights: [
+      "Managed Active Directory account life-cycle and access control across a regulated financial institution, provisioning permissions and enforcing least-privilege access to protect member PII in compliance with GLBA.",
+      "Resolved 250+ help desk tickets via Track-It, including MFA/authentication troubleshooting and secure document management, applying sound judgment to balance security requirements with member service needs.",
+      "Configured and deployed workstation images across 7 branch locations, maintaining network asset documentation (IP allocation, device inventory) to support security and operational continuity.",
+      "Diagnosed member MFA delivery failures by verifying codes were sent in login logs, then worked with the carrier to identify message blocking as the root cause.",
+    ],
+  },
+  {
     title: "CS Success Tutor",
     organization: "Lamar University — Computer Science Department",
     period: "Jan 2025 – Dec 2025",
     highlights: [
-      "Provided technical support for students across Linux and Windows environments, diagnosing software and OS-level issues.",
-      "Used ticketing systems to prioritize requests, document resolutions, and track recurring problems.",
-      "Explained systems concepts including networking, operating systems, and security fundamentals during tutoring sessions.",
-    ],
-  },
-  {
-    title: "Produce — Perishables Representative",
-    organization: "H-E-B",
-    period: "Aug 2023 – Present",
-    highlights: [
-      "Responded to inventory and workflow issues under time pressure in a high-volume retail environment.",
-      "Coordinated with team members through a shared ticketing workflow for stock exceptions and operational blockers.",
-      "Maintained accuracy and communication standards during peak customer traffic.",
+      "Tutored undergraduates in Data Structures & Algorithms, Java, and object-oriented development and communicated complex technical concepts clearly and documented common solutions for recurring issues.",
+      "Provided technical support to users by diagnosing and resolving software, OS, and environment issues across Linux and Windows systems",
     ],
   },
 ];

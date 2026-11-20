@@ -4,10 +4,10 @@ const projects = [
     subtitle: "Windows Server 2025 · VirtualBox",
     period: "Mar 2026 – Apr 2026",
     highlights: [
-      "Deployed Windows Server 2025 domain controller in VirtualBox with AD DS, DNS, and dual-adapter internal networking.",
-      "Provisioned users, security groups, and OUs via PowerShell; enforced password and lockout policies with GPOs.",
-      "Forwarded domain logs to Splunk SIEM on Ubuntu for real-time alerting.",
-      "Deployed osTicket on IIS with MySQL to simulate enterprise help desk workflows.",
+      "Deployed a Windows Server 2025 domain controller with AD DS and DNS to simulate an enterprise identity environment, provisioning users, security groups, and OUs via PowerShell.",
+      "Configured Group Policy Objects for password enforcement, account lockout, and desktop restrictions to simulate enterprise security policy management, and integrated Splunk SIEM with real-time alerts for account lockouts, privilege escalation, and unauthorized user creation.",
+      "Deployed osTicket on IIS with MySQL, simulating ticket-based password resets and account troubleshooting resolved through Active Directory.",
+      "Extended the environment to Azure by configuring hybrid identity via Microsoft Entra Connect, enrolling the domain controller in Azure Arc, and deploying Microsoft Sentinel with custom analytics rules for authentication threat detection.",
     ],
   },
   {
@@ -15,9 +15,8 @@ const projects = [
     subtitle: "pfSense · LAN/WAN segmentation",
     period: "Jan 2026 – Feb 2026",
     highlights: [
-      "Configured pfSense with LAN/WAN segmentation, DHCP scopes, and NAT rules.",
-      "Troubleshot Layer 2/Layer 3 issues including DHCP conflicts and routing failures.",
-      "Validated connectivity with ICMP testing and DHCP lease verification.",
+      "Deployed and configured a pfSense firewall in VirtualBox with LAN/WAN segmentation, DHCP, and NAT to secure a virtualized internal networ",
+      "Diagnosed and resolved DHCP conflicts, routing failures, and interface misconfiguration through systematic Layer 2/Layer 3 troubleshooting.",
     ],
   },
 ];

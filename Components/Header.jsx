@@ -17,7 +17,7 @@ const Header = () => {
     <div className="flex justify-between items-center p-4 fixed top-0 left-0 right-0 z-50 bg-black backdrop-blur-sm border-b-1 border-stone-700 shadow-lg">
       <div className="flex items-center">
         <Link href="#about" className="text-xl font-bold">
-          jaxr.tech
+          jaxr.dev
         </Link>
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-8 ml-8">

@@ -22,7 +22,32 @@ const About = () => {
               <span className="text-stone-400 mt-3 text-medium">
                 CompTIA Security+ (SY0-701)
               </span>
+              <div className="flex flex-col sm:flex-row items-center space-y-4 mt-4 sm:space-y-0 sm:space-x-4">
+                <InteractiveHoverButton
+                  href="/Jax_Riddell_Res.pdf"
+                  download="Jax_Riddell_Resume.pdf"
+                  className="border-white bg-white text-black hover:bg-stone-700 hover:text-white"
+                >
+                  Download Resume
+                </InteractiveHoverButton>
+                <InteractiveHoverButton
+                  href="mailto:riddelljax@protonmail.com"
+                  className="border-white bg-white text-black hover:bg-stone-700 hover:text-white"
+                >
+                  Contact Me
+                </InteractiveHoverButton>
+              </div>
             </div>
+          </div>
+          <div className="flex flex-col items-center">
+            <p className="text-stone-400 mt-3 text-lg max-w-2xl">
+              CS student at Lamar University graduating December 2026. Help Desk
+              Support Representative at Neches Federal Credit Union, assisting
+              users, troubleshooting enterprise systems, and supporting
+              infrastructure across multiple branches. Focused on IT security
+              and cloud infrastructure. CompTIA Security+ and Microsoft Azure
+              Fundamentals (AZ-900) certified.
+            </p>
           </div>
 
           {/* Mobile Layout */}
@@ -41,24 +66,22 @@ const About = () => {
               <span className="text-stone-400 mt-2 text-sm">
                 CompTIA Security+ (SY0-701)
               </span>
+              <div className="flex flex-col items-center space-y-4 mt-4 w-full px-4">
+                <InteractiveHoverButton
+                  href="/Jax_Riddell_Res.pdf"
+                  download="Jax_Riddell_Resume.pdf"
+                  className="border-white bg-white text-black hover:bg-stone-700 hover:text-white"
+                >
+                  Download Resume
+                </InteractiveHoverButton>
+                <InteractiveHoverButton
+                  href="mailto:riddelljax@protonmail.com"
+                  className="border-white bg-white text-black hover:bg-stone-700 hover:text-white"
+                >
+                  Contact Me
+                </InteractiveHoverButton>
+              </div>
             </div>
-          </div>
-
-          {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
-            <InteractiveHoverButton
-              href="/Jax_Riddell_Res.pdf"
-              download="Jax_Riddell_Resume.pdf"
-              className="border-white bg-white text-black hover:bg-stone-700 hover:text-white"
-            >
-              Download CV
-            </InteractiveHoverButton>
-            <InteractiveHoverButton
-              href="mailto:riddelljax@protonmail.com"
-              className="border-white bg-white text-black hover:bg-stone-700 hover:text-white"
-            >
-              Contact Me
-            </InteractiveHoverButton>
           </div>
         </div>
       </div>
