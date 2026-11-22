@@ -40,7 +40,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="hidden md:flex flex-col items-center">
             <p className="text-stone-400 mt-3 text-lg max-w-2xl">
               CS student at Lamar University graduating December 2026. Help Desk
               Support Representative at Neches Federal Credit Union, assisting
@@ -81,6 +81,16 @@ const About = () => {
                 >
                   Contact Me
                 </InteractiveHoverButton>
+              </div>
+              <div className="flex flex-col items-center">
+                <p className="text-stone-400 mt-3 text-lg max-w-2xl">
+                  CS student at Lamar University graduating December 2026. Help
+                  Desk Support Representative at Neches Federal Credit Union,
+                  assisting users, troubleshooting enterprise systems, and
+                  supporting infrastructure across multiple branches. Focused on
+                  IT security and cloud infrastructure. CompTIA Security+ and
+                  Microsoft Azure Fundamentals (AZ-900) certified.
+                </p>
               </div>
             </div>
           </div>
