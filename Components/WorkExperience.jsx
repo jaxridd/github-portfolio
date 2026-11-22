@@ -25,18 +25,18 @@ const WorkExperience = () => {
   return (
     <div>
       <div className="flex flex-col w-full max-w-3xl mx-auto px-4 mt-10">
-        <h1 className="text-2xl font-bold mb-6 text-left">Experience</h1>
+        <h2 className="text-2xl font-bold mb-6 text-left">Experience</h2>
         <div className="space-y-10">
           {experiences.map((job) => (
             <article key={job.title}>
-              <h2 className="text-lg font-bold text-left">{job.title}</h2>
+              <h3 className="text-lg font-bold text-left">{job.title}</h3>
               <div className="flex flex-wrap gap-x-6 gap-y-1 mt-1">
-                <h3 className="text-sm text-stone-300 text-left">
+                <p className="text-sm text-stone-300 text-left">
                   {job.organization}
-                </h3>
-                <h4 className="text-sm text-stone-500 text-left">
+                </p>
+                <p className="text-sm text-stone-400 text-left">
                   {job.period}
-                </h4>
+                </p>
               </div>
               <ul className="list-disc list-inside mt-3 space-y-2 text-stone-300 text-sm">
                 {job.highlights.map((item) => (

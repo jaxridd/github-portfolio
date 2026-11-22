@@ -1,26 +1,37 @@
 "use client";
 import Link from "next/link";
-import { FaGithub, FaLinkedin, FaBars } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
+
+const navItems = [
+  { id: "about", label: "About" },
+  { id: "skills", label: "Skills" },
+  { id: "experience", label: "Experience" },
+  { id: "projects", label: "Projects" },
+];
+
+const socials = [
+  { href: "https://github.com/jaxridd", label: "GitHub", Icon: FaGithub },
+  {
+    href: "https://www.linkedin.com/in/jax-riddell/",
+    label: "LinkedIn",
+    Icon: FaLinkedin,
+  },
+];
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const navItems = [
-    { id: "about", label: "About" },
-    { id: "skills", label: "Skills" },
-    { id: "experience", label: "Experience" },
-    { id: "projects", label: "Projects" },
-  ];
-
   return (
-    <div className="flex justify-between items-center p-4 fixed top-0 left-0 right-0 z-50 bg-black backdrop-blur-sm border-b-1 border-stone-700 shadow-lg">
+    <header className="flex justify-between items-center p-4 fixed top-0 left-0 right-0 z-50 bg-black border-b border-stone-700 shadow-lg">
       <div className="flex items-center">
         <Link href="#about" className="text-xl font-bold">
           jaxr.dev
         </Link>
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-8 ml-8">
+        <nav
+          aria-label="Primary"
+          className="hidden md:flex space-x-8 ml-8"
+        >
           {navItems.map((item) => (
             <Link
               key={item.id}
@@ -33,56 +44,41 @@ const Header = () => {
         </nav>
       </div>
 
-      {/* Desktop Social Links */}
-      <div className="hidden md:flex items-center space-x-6">
-        <Link
-          href="https://github.com/jaxridd"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-gray-300 transition-colors duration-300"
-        >
-          <FaGithub className="text-2xl" />
-        </Link>
-        <Link
-          href="https://www.linkedin.com/in/jax-riddell/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-gray-300 transition-colors duration-300"
-        >
-          <FaLinkedin className="text-2xl" />
-        </Link>
-      </div>
-
-      {/* Mobile Menu Button */}
-      <div className="md:hidden flex items-center space-x-4">
-        <Link
-          href="https://github.com/jaxridd"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-gray-300 transition-colors duration-300"
-        >
-          <FaGithub className="text-xl" />
-        </Link>
-        <Link
-          href="https://www.linkedin.com/in/jax-riddell/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-gray-300 transition-colors duration-300"
-        >
-          <FaLinkedin className="text-xl" />
-        </Link>
+      <div className="flex items-center space-x-4 md:space-x-6">
+        {socials.map(({ href, label, Icon }) => (
+          <Link
+            key={label}
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={label}
+            className="hover:text-gray-300 transition-colors duration-300"
+          >
+            <Icon className="text-xl md:text-2xl" />
+          </Link>
+        ))}
         <button
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="text-white hover:text-gray-300 transition-colors duration-300"
+          type="button"
+          onClick={() => setIsMenuOpen((open) => !open)}
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isMenuOpen}
+          aria-controls="mobile-menu"
+          className="md:hidden text-white hover:text-gray-300 transition-colors duration-300"
         >
-          <FaBars className="text-xl" />
+          {isMenuOpen ? (
+            <FaTimes className="text-xl" />
+          ) : (
+            <FaBars className="text-xl" />
+          )}
         </button>
       </div>
 
-      {/* Mobile Navigation Menu */}
       {isMenuOpen && (
-        <div className="absolute top-full left-0 right-0 bg-black border-b border-stone-700 md:hidden">
-          <nav className="flex flex-col space-y-4 p-4">
+        <div
+          id="mobile-menu"
+          className="absolute top-full left-0 right-0 bg-black border-b border-stone-700 md:hidden"
+        >
+          <nav aria-label="Mobile" className="flex flex-col space-y-4 p-4">
             {navItems.map((item) => (
               <Link
                 key={item.id}
@@ -96,7 +92,7 @@ const Header = () => {
           </nav>
         </div>
       )}
-    </div>
+    </header>
   );
 };
 

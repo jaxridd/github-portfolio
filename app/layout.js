@@ -4,6 +4,7 @@ import Script from "next/script";
 const base = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export const metadata = {
+  metadataBase: new URL("https://jaxr.dev"),
   title: "Jax Riddell - IT & Systems Support",
   description:
     "Portfolio of Jax Riddell — IT support, systems administration, and homelab projects including Active Directory, pfSense, and Splunk SIEM. CompTIA Security+ certified.",
@@ -20,8 +21,6 @@ export const metadata = {
     images: [
       {
         url: "/jax.jpg",
-        width: 1200,
-        height: 630,
         alt: "Jax Riddell",
       },
     ],
@@ -45,7 +44,7 @@ export default function RootLayout({ children }) {
         <link rel="shortcut icon" href={`${base}/jax.jpg`} type="image/jpeg" />
         <Script
           src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"
-          strategy="beforeInteractive"
+          strategy="afterInteractive"
         />
       </head>
       <body className="bg-black text-white">{children}</body>

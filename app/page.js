@@ -11,16 +11,16 @@ export default function Home() {
       <ParticlesBackground />
       <Header />
       <div className="pt-20 md:pt-20">
-        <section id="about" className="py-8 md:py-15">
+        <section id="about" className="py-8 md:py-16 scroll-mt-20">
           <About />
         </section>
-        <section id="skills" className="py-8 md:py-15">
+        <section id="skills" className="py-8 md:py-16 scroll-mt-20">
           <Technologies />
         </section>
-        <section id="experience" className="py-8 md:py-15">
+        <section id="experience" className="py-8 md:py-16 scroll-mt-20">
           <WorkExperience />
         </section>
-        <section id="projects" className="py-8 md:py-15">
+        <section id="projects" className="py-8 md:py-16 scroll-mt-20">
           <Projects />
         </section>
       </div>

@@ -45,23 +45,23 @@ const Technologies = () => {
   return (
     <div>
       <div className="flex flex-col w-full max-w-3xl mx-auto px-4">
-        <h1 className="text-2xl font-bold mb-2 text-left">Technical Skills</h1>
+        <h2 className="text-2xl font-bold mb-2 text-left">Technical Skills</h2>
         <p className="text-stone-400 text-sm mb-6 text-left">
           DHCP · DNS · routing · Group Policy · SIEM · ticketing workflows
         </p>
         <div className="space-y-8">
           {skillCategories.map((category) => (
             <div key={category.title}>
-              <h2 className="text-sm font-semibold text-stone-400 uppercase tracking-wide mb-3 text-left">
+              <h3 className="text-sm font-semibold text-stone-400 uppercase tracking-wide mb-3 text-left">
                 {category.title}
-              </h2>
+              </h3>
               <div className="flex flex-wrap gap-2">
                 {category.skills.map((tech) => {
                   const IconComponent = tech.icon;
                   return (
                     <div
                       key={tech.name}
-                      className="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-4 hover:bg-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105 flex-shrink-0 w-24 h-25"
+                      className="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-4 hover:bg-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105 flex-shrink-0 w-24 h-24"
                     >
                       <div className="flex flex-col items-center justify-center h-full space-y-2">
                         <div
@@ -69,9 +69,9 @@ const Technologies = () => {
                         >
                           <IconComponent />
                         </div>
-                        <h3 className="text-xs font-medium text-center text-white/90 group-hover:text-white transition-colors duration-300">
+                        <p className="text-xs font-medium text-center text-white/90 group-hover:text-white transition-colors duration-300">
                           {tech.name}
-                        </h3>
+                        </p>
                       </div>
                       <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     </div>

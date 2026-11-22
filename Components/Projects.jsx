@@ -33,24 +33,29 @@ const Projects = () => {
   return (
     <div>
       <div className="flex flex-col w-full max-w-3xl mx-auto px-4 mt-10 mb-5">
-        <h1 className="text-2xl font-bold mb-6 text-left">Projects</h1>
+        <h2 className="text-2xl font-bold mb-6 text-left">Projects</h2>
         <div className="space-y-10">
           {projects.map((project) => (
             <article key={project.title + project.github}>
-              <h2 className="text-lg font-bold text-left">{project.title}</h2>
-              <a
+              <h3 className="text-lg font-bold text-left">{project.title}</h3>
+              {project.github && (
+                <a
                 href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`GitHub repository for ${project.title}`}
                 className="text-sm text-stone-300 text-left underline"
               >
-                Github Link
+                GitHub Link
               </a>
+              )}
               <div className="flex flex-wrap gap-x-6 gap-y-1 mt-1">
-                <h3 className="text-sm text-stone-300 text-left">
+                <p className="text-sm text-stone-300 text-left">
                   {project.subtitle}
-                </h3>
-                <h4 className="text-sm text-stone-500 text-left">
+                </p>
+                <p className="text-sm text-stone-400 text-left">
                   {project.period}
-                </h4>
+                </p>
               </div>
               <ul className="list-disc list-inside mt-3 space-y-2 text-stone-300 text-sm">
                 {project.highlights.map((item) => (

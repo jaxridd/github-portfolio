@@ -5,10 +5,10 @@ const ParticlesBackground = () => {
   const containerRef = useRef(null);
 
   useEffect(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     // Wait for particles.js to be available
     const initParticles = () => {
       if (typeof window !== "undefined" && window.particlesJS) {
-        console.log("Initializing particles.js...");
 
         // Configuration based on the official documentation
         const config = {
@@ -62,7 +62,7 @@ const ParticlesBackground = () => {
             },
             move: {
               enable: true,
-              speed: 4,
+              speed: 2,
               direction: "none",
               random: false,
               straight: false,
@@ -120,7 +120,6 @@ const ParticlesBackground = () => {
         try {
           // Initialize particles.js
           window.particlesJS("particles-js", config);
-          console.log("Particles.js initialized successfully!");
         } catch (error) {
           console.error("Error initializing particles.js:", error);
         }
