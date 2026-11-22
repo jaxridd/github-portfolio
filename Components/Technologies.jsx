@@ -9,8 +9,14 @@ import {
   FaDatabase,
   FaGitAlt,
   FaTerminal,
+  FaUsersCog,
+  FaEye,
+  FaKey,
+  FaTicketAlt,
 } from "react-icons/fa";
-import { SiVirtualbox } from "react-icons/si";
+import { SiVirtualbox, SiSplunk, SiPfsense } from "react-icons/si";
+import { TbBrandAzure } from "react-icons/tb";
+import { VscTerminalPowershell } from "react-icons/vsc";
 
 const skillCategories = [
   {
@@ -25,16 +31,29 @@ const skillCategories = [
     skills: [
       { name: "TCP/IP & DNS", icon: FaNetworkWired, color: "text-cyan-400" },
       { name: "Active Directory", icon: FaServer, color: "text-blue-300" },
+      { name: "Group Policy", icon: FaUsersCog, color: "text-indigo-300" },
       { name: "Firewalls & NAT", icon: FaShieldAlt, color: "text-orange-400" },
+      { name: "pfSense", icon: SiPfsense, color: "text-sky-300" },
       { name: "VirtualBox", icon: SiVirtualbox, color: "text-blue-500" },
     ],
   },
   {
-    title: "Tools & Platforms",
+    title: "Security & Monitoring",
     skills: [
-      { name: "Git", icon: FaGitAlt, color: "text-orange-500" },
+      { name: "Splunk SIEM", icon: SiSplunk, color: "text-green-400" },
+      { name: "Microsoft Sentinel", icon: FaEye, color: "text-sky-400" },
+      { name: "Entra ID", icon: FaKey, color: "text-blue-400" },
+    ],
+  },
+  {
+    title: "Cloud & Tools",
+    skills: [
+      { name: "Azure", icon: TbBrandAzure, color: "text-blue-400" },
       { name: "AWS", icon: FaAws, color: "text-amber-400" },
+      { name: "PowerShell", icon: VscTerminalPowershell, color: "text-blue-300" },
       { name: "Bash / CLI", icon: FaTerminal, color: "text-blue-400" },
+      { name: "Git", icon: FaGitAlt, color: "text-orange-500" },
+      { name: "Help Desk Ticketing", icon: FaTicketAlt, color: "text-emerald-400" },
       { name: "SQL", icon: FaDatabase, color: "text-sky-400" },
       { name: "Python", icon: FaPython, color: "text-blue-500" },
     ],
