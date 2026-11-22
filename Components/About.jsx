@@ -41,13 +41,29 @@ const About = () => {
             </div>
           </div>
           <div className="hidden md:flex flex-col items-center">
-            <p className="text-stone-400 mt-3 text-lg max-w-2xl">
-              CS student at Lamar University graduating December 2026. Help Desk
-              Support Representative at Neches Federal Credit Union, assisting
-              users, troubleshooting enterprise systems, and supporting
-              infrastructure across multiple branches. Focused on IT security
-              and cloud infrastructure. CompTIA Security+ and Microsoft Azure
-              Fundamentals (AZ-900) certified.
+            <p className="text-stone-400 mt-3 text-md max-w-2xl">
+              I'm a Computer Science student at Lamar University, graduating in
+              December 2026. Right now I work full time as a Help Desk Support
+              Representative at Neches Federal Credit Union, where I
+              troubleshoot hardware and software issues, manage tickets, and
+              explain technical problems to non-technical users. Working in a
+              financial institution has shown me how much security and clear
+              communication matter in everyday IT work. Outside of work and
+              school, I build homelabs to get hands-on experience. My Active
+              Directory lab includes Windows Server, Group Policy, Splunk SIEM
+              monitoring, and an osTicket help desk, and my pfSense lab covers
+              network segmentation, DHCP, and NAT. I'm currently extending the
+              Active Directory lab into Azure with Entra ID Connect and
+              Microsoft Sentinel. I hold CompTIA Security+, Microsoft AZ-900,
+              Microsoft SC-900, and I'm studying for the CCNA. My technical
+              interests are cloud security, security monitoring, and identity
+              and access management. I enjoy the investigative side of security,
+              like reading logs, working out what happened, and figuring out how
+              to prevent it from happening again. After graduation, I'm looking
+              for an entry-level SOC analyst or cloud security role in the
+              Houston area. My longer-term goal is to grow into cloud security
+              engineering, where I can combine my systems background with
+              building secure environments.
             </p>
           </div>
 
