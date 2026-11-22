@@ -1,6 +1,8 @@
 import "./globals.css";
 import Script from "next/script";
 
+const base = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export const metadata = {
   title: "Jax Riddell - IT & Systems Support",
   description:
@@ -39,8 +41,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/jax.jpg" type="image/jpeg" />
-        <link rel="shortcut icon" href="/jax.jpg" type="image/jpeg" />
+        <link rel="icon" href={`${base}/jax.jpg`} type="image/jpeg" />
+        <link rel="shortcut icon" href={`${base}/jax.jpg`} type="image/jpeg" />
         <Script
           src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"
           strategy="beforeInteractive"

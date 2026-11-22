@@ -1,5 +1,6 @@
 "use client";
 import { InteractiveHoverButton } from "./magicui/interactive-hover-button";
+const base = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 const About = () => {
   return (
@@ -9,7 +10,7 @@ const About = () => {
           {/* Desktop Layout */}
           <div className="hidden md:flex items-center space-x-4">
             <img
-              src="/jax.jpg"
+              src={`${base}/jax.jpg`}
               alt="Jax Riddell"
               className="w-40 h-40 rounded-full"
             />
@@ -24,7 +25,7 @@ const About = () => {
               </span>
               <div className="flex flex-col sm:flex-row items-center space-y-4 mt-4 sm:space-y-0 sm:space-x-4">
                 <InteractiveHoverButton
-                  href="/Jax_Riddell_Res.pdf"
+                  href={`${base}/Jax_Riddell_Res.pdf`}
                   download="Jax_Riddell_Resume.pdf"
                   className="border-white bg-white text-black hover:bg-stone-700 hover:text-white"
                 >
@@ -53,7 +54,7 @@ const About = () => {
           {/* Mobile Layout */}
           <div className="md:hidden flex flex-col items-center space-y-4">
             <img
-              src="/jax.jpg"
+              src={`${base}/jax.jpg`}
               alt="Jax Riddell"
               className="w-24 h-24 rounded-full"
             />
@@ -68,7 +69,7 @@ const About = () => {
               </span>
               <div className="flex flex-col items-center space-y-4 mt-4 w-full px-4">
                 <InteractiveHoverButton
-                  href="/Jax_Riddell_Res.pdf"
+                  href={`${base}/Jax_Riddell_Res.pdf`}
                   download="Jax_Riddell_Resume.pdf"
                   className="border-white bg-white text-black hover:bg-stone-700 hover:text-white"
                 >

@@ -1,6 +1,7 @@
 const projects = [
   {
     title: "Active Directory Homelab",
+    github: "https://github.com/jaxridd/active-directory-homelab",
     subtitle: "Windows Server 2025 · VirtualBox",
     period: "Mar 2026 – Apr 2026",
     highlights: [
@@ -12,12 +13,19 @@ const projects = [
   },
   {
     title: "pfSense Firewall Homelab",
+    github: "https://github.com/jaxridd/pfsense-homelab",
     subtitle: "pfSense · LAN/WAN segmentation",
     period: "Jan 2026 – Feb 2026",
     highlights: [
-      "Deployed and configured a pfSense firewall in VirtualBox with LAN/WAN segmentation, DHCP, and NAT to secure a virtualized internal networ",
+      "Deployed and configured a pfSense firewall in VirtualBox with LAN/WAN segmentation, DHCP, and NAT to secure a virtualized internal network.",
       "Diagnosed and resolved DHCP conflicts, routing failures, and interface misconfiguration through systematic Layer 2/Layer 3 troubleshooting.",
     ],
+  },
+  {
+    title: "AI Assistant Project Placeholder",
+    subtitle: "In Progress",
+    period: "Nov 2026 – Present",
+    highlights: [],
   },
 ];
 
@@ -28,8 +36,14 @@ const Projects = () => {
         <h1 className="text-2xl font-bold mb-6 text-left">Projects</h1>
         <div className="space-y-10">
           {projects.map((project) => (
-            <article key={project.title}>
+            <article key={project.title + project.github}>
               <h2 className="text-lg font-bold text-left">{project.title}</h2>
+              <a
+                href={project.github}
+                className="text-sm text-stone-300 text-left underline"
+              >
+                Github Link
+              </a>
               <div className="flex flex-wrap gap-x-6 gap-y-1 mt-1">
                 <h3 className="text-sm text-stone-300 text-left">
                   {project.subtitle}
